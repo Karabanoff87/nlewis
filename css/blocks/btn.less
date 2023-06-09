@@ -1,0 +1,67 @@
+//main: ../style.less
+
+.btn {
+	padding: 1.05em 1.7em;
+	display: inline-block;
+	vertical-align: top;
+	min-width: 170px;
+	
+	font-family: inherit;
+	font-size: 1.06rem;
+	line-height: 1.1;
+	font-weight: 400;
+	color: @gray;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	
+	background: none;
+	border: 1px solid @gray;
+	border-radius: 1.8em;
+	
+	
+	cursor: pointer;
+	
+	transition: background @transition, color @transition, box-shadow @transition, border-color @transition;
+	
+	&:focus {
+		outline: none;
+	}
+	
+	&:hover {
+		background-color: @black;
+		color: @white;
+		
+		
+		box-shadow: 2px 2px fade(#000, 24%);
+		
+		border-color: @black;
+	}
+	
+	+.btn {
+		margin-left: 1rem;
+	}
+	
+	/* Modificators */
+	
+	&--sm {
+		padding: .6em 1.1em;
+		
+		min-width: 0;
+		
+		font-size: 0.94rem;
+		font-weight: 700;
+		
+		border-width: 2px;
+	}
+	
+	&--thin {
+		min-width: 145px;
+		
+		font-size: .8rem;
+	}
+	
+}
+
+
+
